@@ -14,3 +14,14 @@
 14. `$x("//Employee[contains(Email,LastName)]")` -> `$x("//Employee[contains(substring-after(Email,'@'),LastName)]")`
 15. `$x("//Employee[position()=last()-1]/node()[position()=last()]")`
 
+### Average Bike Stand Number
+- $x("sum(//velovstation/bike_stands) div count(//velovstation)")
+
+### Position of Velov Station "10006 - CHARPENNES" in Villeurbanne
+- $x("count(//velovstation[commune='Villeurbanne' and preceding-sibling::velovstation[commune='Villeurbanne']]/name[.='10006 - CHARPENNES']) + 1")
+
+### Velov Stations with Available Bikes Greater Than Twice the Average
+- $x("//velovstation[availabilityInfo/available_bikes > 2 * (sum(//velovstation/availabilityInfo/available_bikes) div count(//velovstation))]/name")
+
+### Unique Commune Names That Don't Contain "Lyon"
+- $x("//velovstation[not(contains(commune, 'Lyon'))]/commune[not(. = preceding::velovstation/commune)]")
