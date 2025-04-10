@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="countries.xsl"?>
+
+<world>
+    <continent name="North America">
+        <country name="Canada">
+            <capital>Ottawa</capital>
+            <population unit="millions">38</population>
+            <officialLanguages>
+                <language>English</language>
+                <language>French</language>
+            </officialLanguages>
+        </country>
+        <country name="United States">
+            <capital>Washington, D.C.</capital>
+            <population unit="millions">331</population>
+            <currency code="USD">Dollar</currency>
+            <states count="50"/>
+        </country>
+    </continent>
+    <continent name="South America">
+        <country name="Brazil">
+            <capital>Brasília</capital>
+            <population unit="millions">213</population>
+            <currency code="BRL">Real</currency>
+        </country>
+    </continent>
+    <continent name="Europe">
+        <country name="Germany">
+            <capital>Berlin</capital>
+            <population unit="millions">83.2</population>
+            <currency code="EUR">Euro</currency>
+            <borderingCountries>
+                <countryName>France</countryName>
+                <countryName>Poland</countryName>
+                <countryName>Austria</countryName>
+            </borderingCountries>
+        </country>
+        <country name="France">
+            <capital>Paris</capital>
+            <population unit="millions">67</population>
+            <currency code="EUR">Euro</currency>
+            <famousFor>
+                <item>Wine</item>
+                <item>Fashion</item>
+                <item>Eiffel Tower</item>
+            </famousFor>
+            <officialLanguages>
+                <language>French</language>
+            </officialLanguages>
+        </country>
+        <country name="Hungary">
+            <capital>Budapest</capital>
+            <population unit="millions">9</population>
+            <currency code="HUF">Hungarian Forint</currency>
+        </country>
+    </continent>
+    <continent name="Asia">
+        <country name="Japan">
+            <capital>Tokyo</capital>
+            <population unit="millions">125.8</population>
+            <currency code="JPY">Yen</currency>
+            <famousFor>
+                <item>Technology</item>
+                <item>Sushi</item>
+                <item>Anime</item>
+            </famousFor>
+        </country>
+        <country name="India">
+            <capital>New Delhi</capital>
+            <population unit="millions">1393</population>
+            <officialLanguages>
+                <language>Hindi</language>
+                <language>English</language>
+            </officialLanguages>
+            <currency code="INR">Rupee</currency>
+        </country>
+    </continent>
+    <continent name="Africa">
+        <country name="Egypt">
+            <capital>Cairo</capital>
+            <population unit="millions">104</population>
+            <language>Arabic</language>
+            <historicalSites>
+                <site type="pyramid">Giza</site>
+                <site type="temple">Karnak</site>
+            </historicalSites>
+        </country>
+        <country name="South Africa">
+            <capital>Pretoria</capital>
+            <population unit="millions">60</population>
+            <officialLanguages>
+                <language>Afrikaans</language>
+                <language>English</language>
+                <language>Zulu</language>
+            </officialLanguages>
+        </country>
+    </continent>
+    <continent name="Oceania">
+        <country name="Australia">
+            <capital>Canberra</capital>
+            <population unit="millions">25.7</population>
+            <isIsland>true</isIsland>
+        </country>
+    </continent>
+</world>
